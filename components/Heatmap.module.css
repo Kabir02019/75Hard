@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 3px;
+  max-width: 260px;
+}
+
+.grid > div {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 3px;
+}
+
+.cellFuture {
+  background-color: rgba(228, 217, 190, 0.08);
+}
+
+.cellComplete {
+  background-color: var(--color-success);
+}
+
+.cellIncomplete {
+  background-color: rgba(211, 85, 42, 0.55);
+}
+
+.cellToday {
+  outline: 1.5px solid var(--color-gold);
+  outline-offset: 1px;
+}

@@ -1,0 +1,52 @@
+.wrapper {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trailLine {
+  stroke: var(--color-trail);
+  stroke-width: 3;
+  stroke-dasharray: 1 10;
+  opacity: 0.55;
+}
+
+.checkpointDot {
+  fill: var(--color-bg);
+  stroke: var(--color-trail);
+  stroke-width: 2;
+}
+
+.checkpointLabel {
+  fill: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.03em;
+}
+
+.tokenCircle {
+  stroke: var(--color-bg);
+  stroke-width: 3;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+}
+
+.tokenInitials {
+  fill: var(--color-bg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tokenEliminated .tokenCircle {
+  opacity: 0.35;
+}
+
+.tokenEliminated .tokenInitials {
+  opacity: 0.6;
+}
